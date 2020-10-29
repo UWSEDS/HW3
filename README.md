@@ -1,11 +1,39 @@
-# hw3
+# HW3 - Exceptions and Testing
 
-For this homework, you are a data scientist working for Pronto (before the end of their contract with the City of Seattle). Your job is to assist in determining how to do end-of-day adjustments in the number of bikes at stations so that all stations will have enough bikes for the next day of operation (as estimated by the weekday average for the station for the year). Your assistance will help in constructing a plan for each day of the week that specifies how many bikes should be moved from each station and how many bikes must be delievered to each station. Use the 2015 trip data.
+0. Create two directories at the base directory of the homework repository: `src` and `tests`.
 
-Your assignment is to construct plots of the differences between 'from' and 'to' counts for each station by day of the week. That is, you should compute the average value of the 'from' counts for each day-of-week and the subtract from it the average value of the 'to' counts for the corresponding day-of-week. Do this as a set of 7 subplots. You should use at least one function to construct your plots.
+### Create a module in the `src` folder named `knn.py`.
 
-### Grading
-- 2-pts: create a dataframe with station counts averages by day-of-week
-- 1-pt: structure the 7 day-of-week plots as subplots
-- 1-pt: label the plots by day-of-week
-- 1-pt: label the x-axis for plots in the last row and label the y-axis for plots in the left-most column
+1. Inside `knn.py`, write a function, `knn_regression(n_neighbors, data, query)` that implements the k-Nearest Neighbors algorithm for regression. (2 pts for algorithm, 1 pt for exceptions)
+
+The algorithm takes a parameter `k`, or `n_neighbors`, along with the dataset (2 dimensional numpy array, shape (m,n)) and query data point (1 dimensional numpy array, shape (n,)). The algorithm returns the predicted value for query, a single numeric value, or raises an appropriate exception (such as `ValueError`) when inappropriate inputs are passed. 
+
+### Pseudocode for kNN Regression
+
+A. Load the data
+
+B. Initialize K to your chosen number of neighbors
+
+C. For each example in the data:
+
+C.1 Calculate the distance between the query example and the current example from the data
+
+C.2 Add the distance and the index of the example to an ordered collection
+
+D. Sort the ordered collection of distances and indices from smallest to largest (in ascending order) by the distances
+
+E. Pick the first K entries from the sorted collection
+
+F. Get the labels of the selected K entries
+
+G. Return the mean of the K labels
+
+### Create a Python module `test_knn.py` inside the `tests` folder.
+
+2. Inside `test_knn.py`, write a series of test cases to confirm the validity of your implementation in part #1. These tests should contain:
+
+a. At least one *smoke* test (1pt).
+
+b. At least two *one-shot* tests (1pt).
+
+c. All appropriate *edge* tests you find useful for the algorithm (at least two) (2 pts).
