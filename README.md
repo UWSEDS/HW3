@@ -10,6 +10,8 @@ The algorithm takes a parameter `k`, or `n_neighbors`, along with the dataset (2
 
 We are not grading your homework based on computational complexity or on dimensionality larger than 4, so don't worry about inefficient algorithms.
 
+Note that the creation of data to test your function is up to you. Other than the example below, we do not provide a dataset.
+
 ### Example inputs and outputs
 
 ```
@@ -27,7 +29,8 @@ query = np.array([5, 4])
 knn_regression(n_neighbors, data, query)  # returns 773.33
 ```
 
-The above example can be visualized below:
+This is a visualization of the example inputs.
+
 ![Example diagram](knn-hw3-diagram.png)
 
 ### Pseudocode for kNN Regression
