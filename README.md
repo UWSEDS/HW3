@@ -6,7 +6,25 @@
 
 1. Inside `knn.py`, write a function, `knn_regression(n_neighbors, data, query)` that implements the k-Nearest Neighbors algorithm for regression. (2 pts for algorithm, 1 pt for exceptions)
 
-The algorithm takes a parameter `k`, or `n_neighbors`, along with the dataset (2 dimensional numpy array, shape (m,n)) and query data point (1 dimensional numpy array, shape (n,)). The algorithm returns the predicted value for query, a single numeric value, or raises an appropriate exception (such as `ValueError`) when inappropriate inputs are passed. 
+The algorithm takes a parameter `k`, or `n_neighbors`, along with the dataset (2 dimensional numpy array, shape (m,**n+1**)), labels for that dataset (2 dimenand query data point (1 dimensional numpy array, shape (n,)). The algorithm returns the predicted value for query, a single numeric value, or raises an appropriate exception (such as `ValueError`) when inappropriate inputs are passed.
+
+We are not grading your homework based on computational complexity or on dimensionality larger than 4, so don't worry about inefficient algorithms.
+
+### Example inputs and outputs
+```
+import numpy as np
+
+n_neighbors = 3
+data = np.array([[3, 1, 230],
+                 [6, 2, 745],
+                 [6, 6, 1080],
+                 [4, 3, 495],
+                 [2, 5, 260]])
+
+query = np.array([5, 4])
+
+knn_regression(n_neighbors, data, query)  # returns 773.33
+```
 
 ### Pseudocode for kNN Regression
 
