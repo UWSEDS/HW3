@@ -11,6 +11,7 @@ The algorithm takes a parameter `k`, or `n_neighbors`, along with the dataset (2
 We are not grading your homework based on computational complexity or on dimensionality larger than 4, so don't worry about inefficient algorithms.
 
 ### Example inputs and outputs
+
 ```
 import numpy as np
 
@@ -25,6 +26,9 @@ query = np.array([5, 4])
 
 knn_regression(n_neighbors, data, query)  # returns 773.33
 ```
+
+The above example can be visualized below:
+![Example diagram](knn-hw3-diagram.png)
 
 ### Pseudocode for kNN Regression
 
