@@ -1,8 +1,8 @@
 # HW3 - Exceptions and Testing
 
-`Step 0.` Create two directories at the base directory of the homework repository: `src` and `tests`.
+`Step 0.` Create a directory in the base directory of the homework repository: `knn`.  Inside of that directory create a subdirectory `test`.  Be sure to add `__init__.py` files in each of these directories.
 
-### Create a module in the `src` folder named `knn.py`.
+### Create a module in the `knn` folder named `knn.py`.
 
 `Step 1.` Inside `knn.py`, write a function, `knn_regression(n_neighbors, data, query)` that implements the k-Nearest Neighbors algorithm for regression. (2 pts for algorithm, 1 pt for exceptions)
 
@@ -71,3 +71,5 @@ a. At least one *smoke* test (1pt).
 b. At least two *one-shot* tests (1pt).
 
 c. All appropriate *edge* tests you find useful for the algorithm (at least two) (2 pts).
+
+d. Make sure you can execute all of these tests by running `python -m unittest discover -s knn` in the root of your homework repository.
