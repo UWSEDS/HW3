@@ -2,13 +2,14 @@
 
 `Step 0.` Create two directories at the base directory of the homework repository: `src` and `tests`.
 
-### Create a module in the `src` folder named `knn.py`.
+## Create a module in the `src` folder named `knn.py`
 
 `Step 1.` Inside `knn.py`, write a function, `knn_regression(n_neighbors, data, query)` that implements the k-Nearest Neighbors algorithm for regression. (2 pts for algorithm, 1 pt for exceptions)
 
 The functions takes 3 parameters:
+
 1. Parameter `k`, or `n_neighbors`
-2. `data` - 2 dimensional numpy array of shape (m, **n+1**)). `m` denotes the number of samples and `n` is the number of variables in each sample. `+1` is for the labels in each sample. 
+2. `data` - 2 dimensional numpy array of shape (m, **n+1**)). `m` denotes the number of samples and `n` is the number of variables in each sample. `+1` is for the labels in each sample.
 3. `query` - 1 dimensional numpy array, shape (n,)
 
 The algorithm returns the predicted value for query, a single numeric value, or raises an appropriate exception (such as `ValueError`) when inappropriate inputs are passed.
@@ -17,9 +18,9 @@ We are not grading your homework based on computational complexity or on dimensi
 
 Note that the creation of data to test your function is up to you. Other than the example below, we do not provide a dataset.
 
-### Example inputs and outputs
+## Example inputs and outputs
 
-```
+```python
 import numpy as np
 
 n_neighbors = 3
@@ -38,9 +39,9 @@ This is a visualization of the example inputs.
 
 ![Example diagram](knn-hw3-diagram.png)
 
-### Pseudocode for kNN Regression
+## Pseudocode for kNN Regression
 
-```
+```raw
 A. Load the data
 
 B. Initialize K to your chosen number of neighbors
@@ -60,9 +61,9 @@ F. Get the labels of the selected K entries
 G. Return the mean of the K labels
 ```
 
-### Create a Python module `test_knn.py` inside the `tests` folder.
+## Create a Python module `test_knn.py` inside the `tests` folder
 
-`Step 2.` Inside `test_knn.py`, write a series of test cases to confirm the validity of your implementation in `Step 1.` 
+`Step 2.` Inside `test_knn.py`, write a series of test cases to confirm the validity of your implementation in `Step 1.`
 
 These tests should contain:
 
