@@ -7,6 +7,9 @@
 Create the Python package file structure that we covered in the [package structure lecture](https://github.com/UWSEDS/lecture-materials/blob/master/08_package_structure/08_package_structure.pptx)and is described in the [Python Packaging User Guide on Packing Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/); call the package `hw2`.
 Make sure to add a `pyproject.toml` and a `__init__.py` file in the proper locations.
 
+Your `pyproject.toml` file can be a skeleton file with just the basic requirements (i.e., just the `name` field set).
+As usual, `__init__.py` should just be left empty.
+
 At this point, the file structure should look like this:
 
 ```raw
