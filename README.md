@@ -4,9 +4,23 @@
 
 ### Step 0
 
-Create two directories at the base directory of the homework repository: `src` and `tests`.
+Create the Python package file structure that we covered in the [package structure lecture](https://github.com/UWSEDS/lecture-materials/blob/master/08_package_structure/08_package_structure.pptx)and is described in the [Python Packaging User Guide on Packing Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/); call the package `hw2`.
+Make sure to add a `pyproject.toml` and a `__init__.py` file in the proper locations.
 
-**Create a module in the `src` folder named `knn.py`**
+At this point, the file structure should look like this:
+
+```raw
+packaging_tutorial/
+├── LICENSE
+├── pyproject.toml
+├── README.md
+├── src/
+│   └── hw2/
+│       └── __init__.py
+└── tests/
+```
+
+**Create a module in the `src/hw2/` folder named `knn.py`**
 
 ### Step 1
 
